@@ -1,7 +1,7 @@
-# [Blog CMS](http://localhost)
+# [School Website and Blog](http://localhost)
 
 
-Blog CMS is a content management system , created by [Abiruzzaman Molla](https://facebook.com/asliabir) with the massive support and involvement of the community.
+CMS-An-Nurscholafr is a school website and content management system , created by [Abednego Innoocent](https://facebook.com/innocent.abednego) with the massive support and involvement of the community.
 To get started, check out <http://localhost>!
 
 
@@ -62,6 +62,7 @@ You can learn all of those in [w3schools.com](#http://w3schools.com)
  - [x] Allow guest to comments in post.
  - [x] Make a section for users.
  - [x] Add profile picture in comments.
+ - [x] Admin updating the front end
  - [x] Logged user feature. Reg date in profile . Last login date in profile.
 
 ## Features to add next
@@ -76,6 +77,7 @@ You can learn all of those in [w3schools.com](#http://w3schools.com)
 - [ ] Create your own portfullio in about section.
 - [ ] Add terms and condition page.
 - [ ] More improvement in notification.
+- [ ] more improvement on adding referral system
 - [ ] Add backup datebse secdual feauter.
 
 
