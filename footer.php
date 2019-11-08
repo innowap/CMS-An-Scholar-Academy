@@ -44,6 +44,11 @@
     </section> -->
 
     <!-- Testimony  -->
+    <?php
+    $query = "SELECT * FROM testimony WHERE status = 'Approved'";
+    $select_all_testimony = mysqli_query($connection, $query);
+
+    ?>
 
     <section class="ftco-section testimony-section bg-light">
         <div class="container">
@@ -53,33 +58,36 @@
                     <p>Testimonies from parents</p>
                 </div>
             </div>
+
             <div class="row ftco-animate justify-content-center">
                 <div class="col-md-12">
                     <div class="carousel-testimony owl-carousel">
+                        <?php
+                        while ($row = mysqli_fetch_assoc($select_all_testimony)) {
+                            $name = $row['name'];
+                            $testimony = $row['testimony'];
+
+                            ?>
+
+
                         <div class="item">
                             <div class="testimony-wrap d-flex">
                                 <div class="text ml-2 bg-light">
                                     <span class="quote d-flex align-items-center justify-content-center">
                                         <i class="icon-quote-left"></i>
                                     </span>
-                                    <p>The teachers are intentive to students and have their best interest at heart.</p>
-                                    <p class="name"><strong> Abbubakar Saidu </strong> </p>
+                                    <p><?php echo $testimony ?></p>
+                                    <p class="name"><strong><?php echo $name ?> </strong> </p>
 
                                 </div>
                             </div>
                         </div>
-                        <div class="item">
-                            <div class="testimony-wrap d-flex">
-                                <div class="text ml-2 bg-light">
-                                    <span class="quote d-flex align-items-center justify-content-center">
-                                        <i class="icon-quote-left"></i>
-                                    </span>
-                                    <p>The teachers are intentive to students and have their best interest at heart.</p>
-                                    <p class="name"><strong> Abbubakar Saidu </strong> </p>
+                        <?php
+                        }
+                        ?>
 
-                                </div>
-                            </div>
-                        </div>
+
+
                     </div>
                 </div>
             </div>

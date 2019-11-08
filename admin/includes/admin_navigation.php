@@ -3,11 +3,12 @@
     <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> <span
                 class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span>
-            <span class="icon-bar"></span> </button> <a class="navbar-brand" href="index.php">An-Nurscholar Admin</a>
+            <span class="icon-bar"></span> </button> <a class="navbar-brand" href="index.php">An-nur Scholar Admin</a>
     </div>
     <!-- Top Menu Items -->
     <ul class="nav navbar-right top-nav">
         <li> <a href="../index.php">Home Page</a> </li>
+        <li> <a href="feedback.php">Testimonies</a> </li>
         <!--Admin Massege Dropdown menu-->
         <?php include "admin_dropdown_msg.php"; ?>
         <!--#Admin Massege Dropdown menu-->
